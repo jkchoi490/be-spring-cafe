@@ -1,7 +1,10 @@
 package codesquad.codestagram.article.domain;
 
-import codesquad.codestagram.domain.User;
+import codesquad.codestagram.reply.entity.Reply;
+import codesquad.codestagram.user.domain.User;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name="articles")
@@ -21,6 +24,14 @@ public class Article {
 
     @Column(nullable = false)
     private String contents;
+
+
+
+    @OneToMany(mappedBy = "articles", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @OrderBy("id asc")
+    private List<Reply> replies;
+
+
 
     // 기본 생성자 추가 (Thymeleaf 바인딩을 위해 필요)
     public Article() {}

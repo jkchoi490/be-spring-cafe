@@ -1,7 +1,7 @@
 package codesquad.codestagram.util;
 
 
-import codesquad.codestagram.domain.User;
+import codesquad.codestagram.user.domain.User;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Component;
 

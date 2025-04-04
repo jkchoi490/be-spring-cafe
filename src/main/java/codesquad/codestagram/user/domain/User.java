@@ -1,4 +1,4 @@
-package codesquad.codestagram.domain;
+package codesquad.codestagram.user.domain;
 
 import jakarta.persistence.*;
 

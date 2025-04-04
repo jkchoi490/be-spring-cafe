@@ -1,14 +1,11 @@
 package codesquad.codestagram.article.controller;
 
 import codesquad.codestagram.article.domain.Article;
-import codesquad.codestagram.article.repository.ArticleRepository;
 import codesquad.codestagram.article.service.ArticleService;
-import codesquad.codestagram.domain.User;
+import codesquad.codestagram.user.domain.User;
 import codesquad.codestagram.login.service.LoginService;
-import codesquad.codestagram.service.UserService;
 import codesquad.codestagram.util.SessionUtil;
 import jakarta.servlet.http.HttpSession;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

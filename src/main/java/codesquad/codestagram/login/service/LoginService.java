@@ -1,10 +1,9 @@
 package codesquad.codestagram.login.service;
 
-import codesquad.codestagram.domain.User;
-import codesquad.codestagram.repository.UserRepository;
+import codesquad.codestagram.user.domain.User;
+import codesquad.codestagram.user.repository.UserRepository;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class LoginService {

@@ -1,7 +1,7 @@
-package codesquad.codestagram.service;
+package codesquad.codestagram.user.service;
 
-import codesquad.codestagram.domain.User;
-import codesquad.codestagram.repository.UserRepository;
+import codesquad.codestagram.user.domain.User;
+import codesquad.codestagram.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
